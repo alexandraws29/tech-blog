@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color .1s;
+    color: #8f22b9;
+}
+
+a:hover {
+    color: #550874;
+}
+
+button {
+    background-color: #350149;
+    border: 0;
+    padding: 1%;
+    color: white;
+    font-weight: bold;
+    transition: background-color .1s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #8f22b9;
+}
+
+textarea {
+    min-width: 40%;
+    min-height: 100px;
+}
+
+textarea, input {
+    padding: .5%;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+    border: 1px solid #1f002e;
+}
+
+header {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+    background-color: black;
+}
+
+header h1 {
+    font-size: 1em;
+}
+
+main {
+    flex: 1;
+    padding: 2% 4%;
+}
+
+form label {
+    display: block;
+}
+
+form > div {
+    margin-bottom: 2%;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-no-style {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #350149;
+    font-size: 100%;
+    font-weight: bold;
+    transition: color .1s;
+    margin-left: 16px;
+}
+    
+.btn-no-style:hover {
+    background: none;
+    color: #8f22b9;
+}
+    
+.delete-post-btn {
+    background-color: #d41414;
+}
+
+.delete-post-btn:hover {
+    background-color: #ff3d3d;
+}
+
+.post {
+    margin-bottom: 2%;
+    line-height: 150%;
+}
+
+.post .title span {
+    font-style: italic;
+    font-size: 90%;
+    color: #888888;
+    /* display: block; */
+}
+
+.post-list {
+    margin: 0;
+    padding: 0;
+}
+
+.new-post-form input {
+    width: 300px;
+}
+  
+.edit-post-form {
+    margin-bottom: 5%;
+}
+
+.edit-link {
+	display: block;
+	margin: -1.5% 0 2% 0;
+}
+
+.comment-form {
+    margin-bottom: 5%;
+}
+  
+.comment {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+  
+.comment:nth-child(odd) {
+    background-color: #f4ddff;
+}
+  
+.comment .meta {
+    font-size: 90%;
+    margin-bottom: .5%;
+    opacity: .6;
+}
+  
+footer {
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-size: 110%;
+}
+
